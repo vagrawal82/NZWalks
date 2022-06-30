@@ -157,7 +157,7 @@ namespace NZWalks.API.Controllers
             if (string.IsNullOrWhiteSpace(updateWalkDifficultyRequest.Code))
             {
                 ModelState.AddModelError(nameof(updateWalkDifficultyRequest.Code),
-                    $"{nameof(updateWalkDifficultyRequest.Code)} cannot be null or empty or white space.");
+                    $"{nameof(updateWalkDifficultyRequest.Code)} cannot be null or empty or white space...");
             }
 
             if (ModelState.ErrorCount > 0)
